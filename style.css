@@ -64,7 +64,7 @@ p {
 }
 
 #navsection-index {
-    background-image: url("images/bgpurp1.gif") !important;
+    background-image: url("images/bg7opacity.gif") !important;
     background-size: 6%;
 }
 
@@ -313,8 +313,8 @@ form .submit:hover {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
 }
 
 .grid img {
@@ -375,7 +375,8 @@ form .submit:hover {
 
 @media only screen and (max-width: 600px) {
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        width: 90%;
     }
 
     .form-control {
