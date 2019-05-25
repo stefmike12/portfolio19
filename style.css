@@ -482,18 +482,11 @@ form .submit:hover {
 }
 
 .middlesection {
-    display: none; 
+    margin-bottom: 4rem;
 }
 
 .bottomsection {
     display: none;
-}
-
-.navsection {
-    display: flex;
-    position: fixed;
-    height: 4em;
-    z-index: 5;
 }
 
 .overlay-image {
@@ -504,9 +497,16 @@ form .submit:hover {
 }
 }
 
+@media only screen and (min-width: 1060px) {
+
+    .button_container {
+        display: none;
+    }
+}
+
 /*------------- hamburger menu -------------*/
 
-.container {
+/* .container {
     z-index: 100;
     position: absolute;
     width: 100%;
@@ -545,7 +545,7 @@ form .submit:hover {
 .container a:focus:after,
 .container a:active:after {
     width: 100%;
-}
+} */
 
 .button_container {
     position: fixed;
