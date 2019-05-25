@@ -117,12 +117,24 @@ footer {
 .topsection img {
     height: 2rem;
     transition: 200ms;
+    z-index: 1000;
+}
+
+.logomobile img{
+    height: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+
 }
 
 .topsection img:hover {
     transform: rotate(-18deg);
     height: 2.5rem;
 }
+
 .middlesection {
     justify-content: space-between;
     display: flex;
@@ -473,10 +485,20 @@ form .submit:hover {
 
 /*------------- media queries -------------*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 601px) {
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         width: 90%;
+    }
+
+    .project-image-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    }
+
+    h1 {
+        font-size: 2.5rem;
     }
 
     .form-control {
@@ -491,7 +513,7 @@ form .submit:hover {
 }
 
 .middlesection {
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
 }
 
 .bottomsection {
@@ -509,6 +531,10 @@ form .submit:hover {
 @media only screen and (min-width: 1060px) {
 
     .button_container {
+        display: none;
+    }
+
+    .logomobile img {
         display: none;
     }
 }
@@ -548,7 +574,6 @@ form .submit:hover {
 
 .button_container span {
     background: white;
-    box-shadow: 1px 2px 20px rgb(0, 0, 0);
     border: none;
     height: 2px;
     width: 100%;
@@ -559,6 +584,9 @@ form .submit:hover {
     cursor: pointer;
 }
 
+.projectb span {
+    background: black;
+}
 .button_container span:nth-of-type(2) {
     top: 11px;
 }
